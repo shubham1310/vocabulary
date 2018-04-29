@@ -75,7 +75,7 @@ Let's say you want to find out the synonyms for the word ``car``.
     >>> [s.lemmas[0].name for s in syns]
     ['car', 'car', 'car', 'car', 'cable_car']
 
-    >>> [l.name for s in syns for l in s.lemmas]
+    >>> [str(l.name()) for s in syns for l in s.lemmas()]
     ['car', 'auto', 'automobile', 'machine', 'motorcar', 'car', 'railcar', 'railway_car', 'railroad_car', 'car', 'gondola', 'car', 'elevator_car', 'cable_car', 'car']
 
 -  Doing the same using ``Vocabulary``
